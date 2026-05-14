@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Area Prodotti - Olympo Fitness</title>
+    <meta name="keywords" content="Olympo Fitness, palestra, negozio palestra, chi siamo, pesi liberi , macchinari palestra, macchinari, nutrizione, accessori palestra">
+    <meta name="author" content="Olympo Fitness">
+    <link rel="stylesheet" href="../style.css" media="screen">
+    <link rel="stylesheet" href="../mobile.css" media="screen and (max-width: 508px)">
+    <link rel="stylesheet" href="../tablet.css" media="screen and (min-width: 509px) and (max-width: 768px)">
+    <link rel="stylesheet" href="../print.css" media="print">
+    <script src="../javascript/javascript.js"></script>
+</head>
+
+<body onload="addOnBlurProdotto()">
+    <header>
+        <nav aria-label="Aiuti alla navigazione">
+          <a class="navigationHelp" href="#content">Vai al contenuto</a>
+        </nav>
+        
+        <h1 class="logo"><span lang="en">Olympo Fitness</span></h1>
+    
+        <nav id="menu" aria-label="menù del sito">
+          <a class="navigationHelp" href="#content">Salta il menù di navigazione</a>
+          <ul>
+            <li><a href="index.php"><span lang="en">Home</span></a></li>
+            <li><a href="faqAdmin.php">Area Risposte</a></li>
+            <li>Area Prodotti</li>
+            <li><a href="chiSiamo.html">Chi Siamo</a></li>
+            <li><a href="faq.php"><abbr title="Frequently Asked Questions" lang="en">FAQ</abbr></a></li>
+            <li><a href="carrello.php">Carrello</a></li>
+            <li><a href="login.php"><span lang="en">Account</span></a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <nav id="breadcrumb" aria-label="Percorso">
+        <p>Ti trovi in: <a href="index.php"><span lang="en">Home</span></a> &gt; Area Prodotti</p>
+    </nav>
+    
+    <main id="content">   
+      <div class="form">
+        <p>Se vuoi rimuovere o modificare un prodotto puoi accedere alle rispettive aree:</p>
+        <a href="rimuoviProdotto.php" class="button">Rimuovi Prodotto</a> 
+
+        <a href="modificaProdotto.php" class="button">Modifica Prodotto</a>
+    </div>
+        <!--<div id="form_Container"> -->
+        
+          <form action="GestioneProdotti.php" class="form" method="post" onsubmit="validateFormProdotto()">
+          <h2>Aggiungi Prodotto</h2>
+          {errori}
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Inserisci un nome" required>
+
+  
+
+          <label for="categoria">Categoria:</label>
+          <select id="categoria" name="categoria" required>
+             
+              {selezioneCategoria}
+          </select>
+          
+          
+          <label for="prezzo">Prezzo:</label>
+          <input type="text" id="prezzo" name="prezzo" placeholder="Inserisci il prezzo (10.5)" required>
+
+          <label for="peso">Peso:</label>
+          <input type="text" id="peso" name="peso" placeholder="Inserisci il peso" required>
+          
+          <label for="dimensione">Dimensione:</label>
+          <input type="text" id="dimensione" name="dimensione" placeholder="Inserisci la dimensione (Altezza - Lunghezza - Profondità)" required>
+          
+          <label for="colore">Colore:</label>
+          <input type="text" id="colore" name="colore" placeholder="Inserisci il colore principale">
+          
+          <label for="volume">Volume:</label>
+          <input type="text" id="volume" name="volume" placeholder="Inserisci il volume">
+          
+          <label for="materialeUtilizzato">Materiale Utilizzato:</label>
+          <input type="text" id="materialeUtilizzato" name="materialeUtilizzato" placeholder="Inserisci il materiale utilizzato">
+          
+          <label for="quantita">Quantità:</label>
+          <input type="text" id="quantita" name="quantita" placeholder="Inserisci la quantità disponibile" required>
+          
+          <label for="descrizione">Descrizione:</label>
+          <textarea id="descrizione" name="descrizione" cols="30" rows="5" placeholder="Inserisci qui una breve descrizione" required></textarea>
+  
+          <label for="keywords"><span lang="en">Keywords</span></label>
+          <textarea id="keywords" name="keywords"  cols="30" rows="5" placeholder="Inserisci qui delle keywords"></textarea>
+          
+          <label for="alt">Breve Descrizione di Supporto:</label>
+          <textarea id="alt" name="alt"  cols="30" rows="5" placeholder="Inserisci qui una breve descrizione" required></textarea>
+          
+          <label for="marca">Marca:</label>
+          <select id="marca" name="marca" required>
+              {selezioneMarca}
+          </select>
+          
+          <input type="submit" name="submit" class="button" value="Aggiungi Prodotto">
+          {risultatoQuery}
+      </form> 
+      <!--</div>-->
+
+        <a href="#" id="buttonToTop">Torna in cima</a>
+    </main>
+
+    <footer>
+        <div id="contacts">
+          <h3>Contatti</h3>
+          <ul>
+            <li><span lang="en">Email</span>: <a href="mailto:tecweb2024@gmail.com">tecweb2024@gmail.com</a></li>
+            <li>Telefono: <a href="tel:+123456789">+39 123-456-789</a></li>
+            <li>Sede: Via Trieste, 63, 35121 Padova (<abbr title="Padova">PD</abbr>)</li>
+        </ul>
+        </div>
+        <div id="social">
+          <h4>Seguici Su</h4>
+          <a href="https://www.instagram.com/" id="instaImage"><span lang="en">Instagram</span></a>
+      
+          <a href="https://www.youtube.com/" id="youtubeImage"><span lang="en">Youtube</span></a>
+          
+          <a href="https://www.facebook.com/" id="facebookImage"><span lang="en">Facebook</span></a>
+      
+          <a href="https://www.twitter.com/" id="twitterImage"><span lang="en">Twitter</span></a>
+        </div>
+        <div id="footer_Text"><p>&copy; 2024 <span lang="en">Olympo Fitness</span>. Tutti i diritti riservati.</p></div> 
+      </footer>
+</body>
+</html>
+
+
+
+
+
+

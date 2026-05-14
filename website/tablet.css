@@ -1,0 +1,361 @@
+/******************
+ *                *
+ *    HOME PAGE   *
+ *                *
+ ******************/
+
+header {
+    padding: 1em;
+}
+
+.logo {
+    line-height: 2em;
+}
+
+#menu {
+    bottom: auto;
+    top: 0;
+}
+
+#menu ul {
+    font-size: 1.1em;
+}
+
+.button:hover {
+    background-color: #757575;
+  }
+
+/* CATEGORIES */
+
+#categories {
+    padding: 1em 2em 1em 2em;
+}
+
+#categories h2 {
+    font-size: 2em;
+}
+
+#categories_Container li {
+    flex: 0 0 45%;
+    font-size: 1.2em;
+}
+
+#categories_Container li:hover{
+    transform: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* BRAND */
+
+#brand {
+    padding: 1em;
+}
+
+#brand h3 {
+    font-size: 1.5em;
+}
+
+#brand_Container li {
+    flex-basis: 20%;
+}
+
+/* PAYMENTS */
+
+#payments {
+    padding: 1em;
+}
+
+#payments h3 {
+    font-size: 1.5em;
+}
+
+#Mastercard,
+#Visa,
+#Googlepay,
+#Paypal {
+    width: 20%
+}
+
+#Mastercard,
+#Visa,
+#Googlepay,
+#Paypal {
+    padding-bottom: 5%;
+}
+
+/* CONTACTS */
+
+#contacts h3 {
+    font-size: 1.5em;
+}
+
+/* SOCIAL */
+
+#social h4 {
+    font-size: 1.3em;
+}
+
+#social a {
+    margin: 0.5em;
+}
+
+/* BUTTON TO TOP */
+
+#buttonToTop {
+    bottom: 2em;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 1em;
+}
+
+/***********************************************************
+ *                                                         *
+ *    ACCESSORI - PESI LIBERI - NUTRIZIONE - MACCHINARI    *
+ *                                                         *
+ ***********************************************************/
+
+#products_List {
+    padding: 1em 1em 2em 1em;
+}
+
+#products_List h2 {
+    font-size: 2em;
+}
+
+#products_Container li {
+    flex: 0 0 40%;
+    font-size: 1.1em;
+}
+
+#products_Container li:hover {
+    transform: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/******************
+ *                *
+ *    PRODOTTO    *
+ *                *
+ ******************/
+
+#product_Page {
+    padding: 1em;
+}
+
+#product_Page h2 {
+    font-size: 170%;
+}
+
+#product_Images {
+    justify-content: center;
+    clear: both;
+    width: 100%;
+    padding: 0.5em;
+}
+
+#product_Details h3 {
+    font-size: 140%;
+}
+
+#product_Details{
+    clear: both;
+    width: 100%;
+}
+
+#product_Specs {
+    font-size: 120%;
+}
+
+#product_Description h3 {
+    font-size: 140%;
+}
+
+#product_Description {
+    font-size: 1.3em;
+}
+
+#delivery_Details h3 {
+    font-size: 140%;
+}
+
+#delivery_Details {
+    font-size: 1.3em;
+}
+
+#cart_Specs {
+    clear: both;
+}
+
+
+
+/******************
+ *                *
+ *    CHI SIAMO   *
+ *                *
+ ******************/
+
+#chiSiamo_Content {
+    padding: 1em;
+}
+
+#chiSiamo_Content h2 {
+    font-size: 170%;
+}
+
+#company_Info p {
+    font-size: 1.3em;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#company_Info h3 {
+    font-size: 140%;
+}
+
+#company_Info img {
+    width: 90%;
+    height: auto;
+}
+
+#team_Members h3 {
+    font-size: 140%;
+}
+
+.members p {
+    font-size: 1.3em;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+
+/***********
+ *         *
+ *   FAQ   *
+ *         *
+ ***********/
+
+#faq_Page h2 {
+    font-size: 170%;
+}
+
+.type_Questions {
+    font-size: 1.5em;
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+
+.question h3 {
+    font-size: 140%;
+}
+
+/*******************************************
+ *                                         *
+ *   ACCOUNT(LOGIN-LOGOUT-REGISTRAZIONE)   *
+ *                                         *
+ *******************************************/
+
+#form_Container {
+    padding: 1em;
+    text-align: center;
+}
+
+#form_Container h2 {
+    font-size: 170%;
+}
+
+
+
+/****************
+ *              *
+ *   CARRELLO   *
+ *              *
+ ****************/
+
+#cart_Page {
+    padding: 1em;
+}
+
+#cart_Page h2 {
+    font-size: 170%;
+}
+
+#cart_Page p{
+    width: auto;
+}
+
+#headerCart dt {
+    font-size: 1.5em;
+}
+
+#headerCart dd {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+#cart_Container li {
+    flex: 0 0 35%;
+    font-size: 1.2em;
+}
+
+/**********************
+ *                    *
+ *    DOMANDE FATTE   *
+ *                    *
+ **********************/
+
+#q_a_container h2 {
+    font-size: 170%;
+    padding: 2%;
+}
+
+.q_a_box {
+    margin-bottom: 5%;
+}
+
+/***************************
+ *                         *
+ *   AREA_ADMIN_RISPOSTE   *
+ *                         *
+ ***************************/
+
+.questions_container {
+    padding: 5%;
+}
+
+
+.questions_container h2{
+    font-size: 170%;
+}
+
+.box_q_a {
+    padding: 2%;
+    font-size: 110%;
+    margin-bottom: 3%;
+}
+
+
+/*********************
+ *                   *
+ *   ERROR 404-500   *
+ *                   *
+ *********************/
+
+#error_m h2 {
+    font-size: 170%;
+}
+
+#error_m p {
+    font-size: 110%;
+}
+
+.error_Message{
+    font-size: 110%;
+}
+
+.success_Message{
+    font-size: 110%;
+}

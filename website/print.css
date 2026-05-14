@@ -1,0 +1,540 @@
+  /******************
+   *                *
+   *    HOME PAGE   *
+   *                *
+   ******************/
+
+    html{
+    font-family: "Times New Roman", Times, serif;
+    font-size:12pt;
+    }
+
+    body{
+      display: block;
+    }
+    
+    #menu { 
+      display: none;
+    }
+
+    main {
+      margin-left: 0.8cm; 
+      width: 100%;
+      padding: 0.3cm 0 0.5cm 0;
+  }  
+
+     .logo{
+      height: 3cm;
+      width: auto;
+      content: url('images/zeusprint.jpg');
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+    a[href^="/"]:after {
+        content: " ( http://tecweb.studenti.math.unipd.it/fpivetta/" attr(href) ") ";
+    }
+
+     a[href*="http"]:after{
+            content: " ( " attr(href) " )";
+     }
+    
+    #buttonToTop { 
+      display: none;
+    }
+    .button{
+      display:none;
+    }
+  
+    
+    .navigationHelp { 
+      display: none;
+    }
+  
+   
+    #breadcrumb {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      font-size: 16px;
+      padding: 8px;
+    }
+    
+    
+    #categories {
+      padding: 20px;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+    }
+
+
+    #categories_Container{
+      list-style-type: none;
+      padding: 0;
+      margin: 0 -10px;
+    }
+  
+    #categories_Container li{  
+      display:inline-block;
+      border: 1px solid black;
+      margin:5px;
+      height: 100%;
+      padding: 0px;
+      width:250px;
+      text-align: center;
+    }
+    
+  
+    #categories_Container a{
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      color: black;
+    }
+  
+    #categories_Container img{
+      height:90%;
+      width:100%;
+      align-content: center;
+      object-fit:cover;
+    }
+
+    #brand_Container{
+      list-style-type: none;
+      padding: 0 3em 0 3em;
+      margin: 0 -10px;
+    }
+  
+    #brand_Container li{
+      margin: 1em;
+      height: 100%;
+      border-radius: 10px;
+    }
+  
+  
+    #brand_Container img{
+      display:none;
+    }
+  
+    
+    #payments {
+      padding: 20px;
+      background-color: white;
+      color: black;
+      
+      font-size: 18px;
+    }
+    #payments h2 {
+      margin-bottom: 10px; 
+    }
+    #payments_Grid {
+      display: block;
+      margin-top: 0; 
+    }
+    
+    #Mastercard,
+    #Visa,
+    #Googlepay,
+    #Paypal {
+      display: inline-block; 
+      width: 100px; 
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-size: 16px;
+      color: black;
+      background-color: white;
+      text-align: center; 
+    }
+    
+  
+    
+    #social_List {
+      display:none;
+    }
+
+    footer{
+        border: 1px solid black;
+        margin-top: 0.5cm;
+        text-align: center;
+    }
+    #contacts ul {
+      text-align: center;
+      list-style: none;
+      padding-bottom: 0.5cm;
+    }
+
+    #footer_Text p
+    {
+      margin-bottom: 0.5cm;
+    }
+  
+
+
+   /***********************************************************
+   *                                                         *
+   *    ACCESSORI - PESI LIBERI - NUTRIZIONE - MACCHINARI    *
+   *                                                         *
+   ***********************************************************/
+  
+  
+  
+  #products_Container {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0 -10px;
+  }
+    
+  #products_Container li{
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+   
+  #products_Container img {
+      align-content: center;
+      object-fit:cover;
+      width: 100%;
+      height: 80%;
+      margin-bottom: 0.3cm;
+  }
+
+  #products_Container a{
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+  }
+  #products_Container p {
+    margin-top: 0;
+  }
+  
+  /******************
+   *                *
+   *    PRODOTTI   *
+   *                *
+   ******************/
+
+   
+
+#product_Images {
+    text-align: center;
+}
+
+#product_Images img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 0 10px; 
+}
+
+
+#product_Details {
+  float: left; 
+  width: 40%;
+  margin-top: 0; 
+}
+
+#product_Details h2 {
+  font-size: 180%; 
+  margin-top: 6px; 
+  margin-bottom: 6px; 
+}
+
+
+#product_Specs,
+#cart_Specs {
+  list-style-type: none;
+  font-size: 120%;
+  margin-bottom: 6px;
+}
+
+.specs_List {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 0;
+}
+
+#product_Description h2 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#product_Description {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 110%;
+}
+
+#delivery_Details h2 {
+  margin-bottom: 6px;
+}
+
+#delivery_Details {
+  font-size: 110%;
+}
+
+#delivery_List {
+  list-style-type: none;
+}
+
+#addToCart{
+  display:none;
+}
+
+
+  /******************
+   *                *
+   *    CHI SIAMO   *
+   *                *
+   ******************/
+
+.members img{
+  display: inline;
+    float: left;
+    width:100px;
+    height:100px;
+}
+
+  /***********
+   *         *
+   *   FAQ   *
+   *         *
+   ***********/
+
+   #ask_Question{
+    display:none;
+   }
+
+   #formDomanda {
+    margin-top: 15%;;
+    font-size: 120%; 
+    text-align: left; 
+}
+
+  #question {
+    width: 100%; 
+    box-sizing: border-box;
+    resize: none; 
+}
+
+#formDomanda input[type="submit"] {
+  margin-bottom: 2em; 
+}
+   
+
+   .question h2{
+    margin-bottom: 0;
+    font-size: 14pt;
+   }
+   
+   .question p{
+    margin-top:0;
+   }
+
+  /***************
+  *              *
+  *   CARRELLO   *
+  *              *
+  ***************/
+
+  body {
+    padding-top: 3.5cm;
+    position: relative;
+  }
+  
+  h1.logo {
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+  
+
+
+  #headerCart {
+    display:block;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #headerCart li
+  {
+    list-style: none; 
+    padding: 0;
+  }
+
+  #buy_Now {
+    display: none;
+  }
+  
+  #cart_Container{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 -10px;
+  }
+
+  #cart_Container li{
+    display: inline-block;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 0px;
+    width:200px;
+    height: 100%;
+  }
+
+  #cart_Container a{
+    text-decoration: none;
+    color: #000000;
+  }
+
+  #cart_Container img{
+    align-content: center;
+    object-fit:contain;
+    width: 100%;
+  }
+
+  .product-details {
+    font-size: 110%;
+    margin: 2%;
+  }
+  
+  .remove-product {
+    display: none;
+  }
+
+  #order_Details {
+    padding: 12px 0;
+    margin-top: 18px;
+    margin-bottom: 5px;
+  }
+
+  #order_Details h2 {
+    font-size: 120%;
+  }
+
+  #delivery_Address {
+    margin: 6px;
+    width: calc(50% - 12px); 
+    float: left; 
+  }
+
+  #delivery_Payments {
+    margin: 6px;
+    width: calc(50% - 12px); 
+    float: right; 
+  }
+
+  #delivery_Address label,
+  #delivery_Address input,
+  #delivery_Address textarea {
+    display: block; 
+    margin-bottom: 6px; 
+  }
+
+  .payment-details {
+    display: none;
+  }
+
+  .popup {
+    display: none;
+  }
+  
+  
+  #contacts li[aria-label="email"] a,
+  #contacts li[aria-label="telefono"] a {
+    color: black;
+  }
+  
+  footer {
+    clear: both; 
+  }
+  
+
+
+  /***************
+   *             *
+   *   ACCOUNT   *
+   *             *
+   ***************/
+
+   
+   #form_Container p{
+    display:none;
+   }
+   
+
+
+
+
+
+   /*******************************************
+   *                                         *
+   *   ACCOUNT(LOGIN-LOGOUT-REGISTRAZIONE)   *
+   *                                         *
+   *******************************************/
+  
+
+   #form_Container{
+    padding: 10px;
+    width: 50%;
+    margin: 0;
+  }
+
+  #logout{
+    margin-bottom: 10px;
+    font-size: 120%;
+  }
+
+  #form_Container h2{
+    font-size: 200%;  
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;  
+  }
+
+
+  #form_Container p{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .form {
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form label{
+    width: 90%;
+  }
+  
+  .form input[type="email"],
+  .form input[type="nome"],
+  .form input[type="password"],
+  .form input[type="text"],
+  .form input[type="code"]
+  .form input[type="number"] {
+    width: 90%;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }

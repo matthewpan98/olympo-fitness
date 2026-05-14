@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title> {titolo} - Olympo Fitness</title>
+  <meta name="keywords" content= "{keywords}" >
+  <meta name="author" content="Olympo Fitness">
+  <link rel="stylesheet" href="../style.css" media="screen">
+  <link rel="stylesheet" href="../mobile.css" media="screen and (max-width: 508px)">
+  <link rel="stylesheet" href="../tablet.css" media="screen and (min-width: 509px) and (max-width: 768px)">
+  <link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Aiuti alla navigazione">
+      <a class="navigationHelp" href="#content">Vai al contenuto</a>
+    </nav>
+   
+    <h1 class="logo"><span lang="en">Olympo Fitness</span></h1>
+
+    <nav id="menu" aria-label="menù del sito">
+      <a class="navigationHelp" href="#content">Salta il menù di navigazione</a>
+      <ul>
+        <li><a href="index.php"><span lang="en">Home</span></a></li>
+        <li><a href="faqAdmin.php">Area Risposte</a></li>
+        <li><a href="GestioneProdotti.php">Area Prodotti</a></li> 
+        <li><a href="chiSiamo.html">Chi Siamo</a></li>
+        <li><a href="faq.php"><abbr title="Frequently Asked Questions" lang="en">FAQ</abbr></a></li>
+        <li><a href="carrello.php">Carrello</a></li>
+        <li><a href="login.php"><span lang="en">Account</span></a></li>
+      </ul>
+    </nav>
+</header>
+    <nav id="breadcrumb" aria-label="Percorso">
+      <p>Ti trovi in: {breadcrumb}</p>
+  </nav>
+
+<main id="content">
+
+  <div id="product_Page">
+    <h2>{titoloProdotto}</h2>
+    {errori}
+
+    {immaginiProdotto}
+
+    {contenutoProdotto}
+
+  </div>
+
+  <a href="#" id="buttonToTop">Torna in cima</a>
+
+</main>
+
+<footer>
+  <div id="contacts">
+    <h3>Contatti</h3>
+    <ul>
+      <li><span lang="en">Email</span>: <a href="mailto:tecweb2024@gmail.com">tecweb2024@gmail.com</a></li>
+      <li>Telefono: <a href="tel:+123456789">+39 123-456-789</a></li>
+      <li>Sede: Via Trieste, 63, 35121 Padova (<abbr title="Padova">PD</abbr>)</li>
+  </ul>
+  </div>
+  <div id="social">
+    <h4>Seguici Su</h4>
+    <a href="https://www.instagram.com/" id="instaImage"><span lang="en">Instagram</span></a>
+
+    <a href="https://www.youtube.com/" id="youtubeImage"><span lang="en">Youtube</span></a>
+    
+    <a href="https://www.facebook.com/" id="facebookImage"><span lang="en">Facebook</span></a>
+
+    <a href="https://www.twitter.com/" id="twitterImage"><span lang="en">Twitter</span></a>
+  </div>
+  <div id="footer_Text"><p>&copy; 2024 <span lang="en">Olympo Fitness</span>. Tutti i diritti riservati.</p></div> 
+</footer>
+
+</body>
+</html>

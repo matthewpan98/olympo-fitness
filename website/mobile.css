@@ -1,0 +1,381 @@
+/*HOME PAGE*/
+
+header {
+    padding: 0em;
+}
+
+.button:hover {
+    background-color: #757575;
+}
+
+.logo{
+    line-height: 2.5em;
+    clear: both;
+}
+
+#menu{
+    background-color: #757575;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-around;
+    clear: both;
+    width: 100%;
+}
+
+#menu ul{
+    font-size: 100%;
+    padding: 0.5em;
+}
+
+#menu ul li{
+    margin: 0 0.3em;
+}
+
+#breadcrumb{
+    font-size: 90%;
+    padding: 0.5em 0em 0.5em 0.8em;
+}
+
+/*categories*/
+
+#categories{
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+#categories h2{
+    font-size: 160%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#categories_Container li{
+    padding: 0.5em;
+    flex: 0 0 60%;
+    font-size: 110%;
+}
+
+#categories_Container li:hover{
+    transform: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#categories_Container img{
+    display: none;
+}
+
+/*brand*/
+
+#brand{
+    margin-top: auto;
+    padding: 0.5em;
+  }
+
+#brand h3{
+    font-size: 130%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#brand_Container{
+    padding: 0 1em 0 1em;
+    margin: 0em;
+}
+
+#brand_Container li{
+    flex-basis: 30%;
+}
+
+/*payments*/
+
+#payments{
+    padding: 0.5em;
+}
+
+#payments h3{
+    font-size: 130%;
+    padding-bottom: 0.3em;
+}
+
+#Mastercard{
+    width: 20%;
+    padding-bottom: 5%;
+}
+#Visa{
+    width: 20%;
+    padding-bottom: 5%;
+}
+#Googlepay{
+    width: 20%;
+    padding-bottom: 5%;
+}
+#Paypal{
+    width: 20%;
+    padding-bottom: 5%;
+}
+
+/*contacts*/
+
+#contacts h3{
+    font-size: 130%;
+}
+
+/*social*/
+
+#social h4{
+    font-size: 110%;
+}
+
+/*button to top*/
+
+#buttonToTop{
+    position: fixed;
+    font-size: 90%;
+    right: 0.5em;
+    bottom: 6em;
+}
+
+a#buttonToTop{
+    margin-bottom: 2.5em;
+}
+
+footer{
+    padding: 0.5em;
+}
+
+#footer_Text{
+    margin-bottom: 5em;
+}
+
+
+
+/*ACCESSORI - PESI LIBERI - NUTRIZIONE - MACCHINARI*/
+
+#products_List{
+    padding: 0.5em 0.5em 1.5em 0.5em;
+}
+
+#products_List h2{
+    font-size: 160%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#products_Container li{
+    flex: 0 0 60%;
+}
+
+#products_Container li:hover {
+    transform: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#products_Container a{
+    font-size: 110%;
+}
+
+
+
+/*PRODOTTO*/
+
+#product_Page{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#product_Page h2{
+    font-size: 160%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#product_Images{
+    justify-content: center;
+    clear: both;
+    width: 100%;
+    padding: 0em;
+}
+
+#product_Details h3{
+    font-size: 150%;
+}
+
+#product_Details {
+    clear: both;
+    width: 100%;
+}
+
+#product_Specs{
+    font-size: 110%;
+}
+
+#product_Description h3{
+    font-size: 130%;
+}
+
+#product_Description{
+    font-size: 110%;
+}
+
+#delivery_Details h3{
+    font-size: 130%;
+}
+
+#delivery_Details{
+    font-size: 110%;
+}
+
+#cart_Specs {
+    clear: both;
+}
+
+
+
+/*CHI SIAMO*/
+
+#chiSiamo_Content{
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+#chiSiamo_Content h2{
+    font-size: 160%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#company_Info p{
+    font-size: 110%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+#company_Info h3{
+    font-size: 130%;
+}
+
+#company_Info img{
+    width: 70%;
+    height: 50%;
+}
+
+#team_Members h3{
+    font-size: 130%;
+}
+
+.members p{
+    font-size: 110%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+
+/*FAQ*/
+
+#faq_Page h2{
+    font-size: 160%;
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+}
+
+.type_Questions{
+    font-size: 130%;
+    margin-left: 0em;
+    margin-bottom: 0.5em;
+}
+
+.question h3{
+    font-size: 120%;
+}
+
+
+/*ACCOUNT*/
+
+#form_Container {
+    padding: 0.5em;
+    width: auto;
+}
+
+#form_Container h2{
+    font-size: 140%;
+}
+
+#form_Container p{
+    font-size: 120%;
+    padding:10%;
+}
+
+
+
+/*CART*/
+
+#cart_Page {
+    width: 90%;
+    padding: 5%;
+}
+
+#cart_Page h2{
+    font-size: 160%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#headerCart dt{
+    font-size: 130%;
+}
+
+#headerCart dd{
+    font-size: 110%;
+    margin-bottom: 1em;
+}
+
+#cart_Container{
+    justify-content: space-around;
+}
+
+#cart_Container li{
+    flex: 0 0 40%;
+    font-size: 100%;
+}
+
+
+
+/*DOMANDE FATTE*/
+
+#q_a_container .q_a_box{
+    margin-bottom: 8%;
+    list-style: none;
+    border: 1px solid #000;
+}
+
+
+
+/*AREA_ADMIN_RISPOSTE*/
+  
+.questions_container{
+    padding: 3%;
+    text-align: center;
+}
+
+.questions_container h2{
+    font-size: 160%;
+}
+
+.box_q_a{
+    padding: 1%;
+    border: #000 solid 2px;
+    margin-bottom: 2%;
+}
+
+/*ERROR 404-500*/
+
+#error_m h2{
+    font-size: 160%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#error_m p{
+    font-size: 110%;
+}
+
