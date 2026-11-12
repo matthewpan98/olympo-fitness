@@ -125,12 +125,8 @@ python3 scripts/build_static.py http://localhost:8080/
 
 Lo script visita le pagine pubbliche e le salva in `docs/` come HTML. Poi converte i link `.php` in `.html` e disattiva i form, che non possono funzionare senza backend.
 
-## Team
+## Autore
 
-Progetto sviluppato in gruppo da:
-- Federico Pivetta
-- Teodor Mihail Corbu
-- Matthew Pan
-- Hosam Nour el Hadi
+**Matthew Pan**: progetto sviluppato in gruppo per il corso di Tecnologie Web.
 
 La relazione completa del progetto (analisi dei requisiti, progettazione, accessibilità, test) è in [`website/relazione/`](website/relazione/).
