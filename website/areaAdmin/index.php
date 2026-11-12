@@ -29,7 +29,7 @@ if($connection->isLoggedInAdmin()){
         if ($listaCategorie != null) {
 
             foreach ($listaCategorie as $categoria) {
-                $nomeCategorieMinuscolo = strtolower(str_replace(' ', '', $categoria["nome"]));
+                $nomeCategorieMinuscolo = lcfirst(str_replace(' ', '', $categoria["nome"]));
                 $stringaCategorie .= '<li><a href="' . $nomeCategorieMinuscolo . '.php"><img src="../' . $categoria["immagineSfondo"] . '" alt="">' . $categoria["nome"] . '</a></li>';
                 $nomeCategorieMinuscolo = "";
             }

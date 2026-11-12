@@ -39,7 +39,7 @@ if($connection->isLoggedInUser()){
                 $nomeCategoria = $connection->getCategoriaFromId($prodotto['categoria']);
                 $connection->closeDBConnection();
 
-                $categoriaLink = strtolower(str_replace(' ', '', $nomeCategoria[0]['nome']));
+                $categoriaLink = lcfirst(str_replace(' ', '', $nomeCategoria[0]['nome']));
             
                 $breadcrumb = '<a href="index.php"><span lang="en">Home</span></a> &gt; <a href="' . $categoriaLink . '.php"> ' . $nomeCategoria[0]['nome'] . ' </a> &gt;' . $prodotto['nome'];
             
