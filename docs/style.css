@@ -1049,3 +1049,481 @@
     font-size: 120%;
   }
 
+
+
+
+  /*********************************************
+   *                                           *
+   *   RIFINITURA LAYOUT                       *
+   *   (spaziature, griglie e card uniformi)   *
+   *                                           *
+   *********************************************/
+
+  *, *::before, *::after{
+    box-sizing: border-box;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+  /* Contenuto centrato con larghezza massima */
+  main{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Header: logo e menu sulla stessa riga, senza float */
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #menu{
+    margin-left: auto;
+  }
+
+  /* Icone social e "torna su": dimensioni originali */
+  #social a,
+  a#buttonToTop{
+    box-sizing: content-box;
+  }
+
+  #menu a:hover,
+  nav a:hover{
+    text-decoration-thickness: 2px;
+  }
+
+  #breadcrumb{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  /* Bottoni */
+  .button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    line-height: 1.2em;
+    transition: background-color 0.2s;
+  }
+
+  /* Titoli di sezione allineati */
+  #brand h3,
+  #payments h3{
+    text-align: center;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+
+  /* CARD CATEGORIE */
+  #categories_Container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25em;
+    margin: 0;
+  }
+
+  #categories_Container li{
+    margin: 0;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  #categories_Container li:hover{
+    transform: translateY(-4px);
+  }
+
+  #categories_Container a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 0.4em;
+    letter-spacing: 0.03em;
+  }
+
+  #categories_Container img{
+    display: block;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    margin-bottom: 0.4em;
+  }
+
+  /* BRAND */
+  #brand_Container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.25em;
+    max-width: 900px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #brand_Container li{
+    margin: 0;
+    height: auto;
+  }
+
+  #brand_Container a{
+    display: block;
+  }
+
+  #brand_Container img{
+    display: block;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+  }
+
+  /* PAGAMENTI */
+  #payments_Grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  #payments_Grid li{
+    float: none;
+    width: 120px;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    background-size: contain;
+    background-origin: content-box;
+    padding: 8px;
+    overflow: hidden;
+  }
+
+  /* CARD PRODOTTI (pagine categoria) */
+  #products_Container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25em;
+    margin: 0;
+  }
+
+  #products_Container li{
+    margin: 0;
+    height: auto;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+  }
+
+  #products_Container li:hover{
+    transform: translateY(-4px);
+  }
+
+  #products_Container a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 120%;
+  }
+
+  #products_Container img{
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: #F5F5F5;
+  }
+
+  #products_Container p{
+    margin: 0;
+    padding: 0.75em;
+    border-top: 1px solid #DDDDDD;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* PAGINA PRODOTTO: immagini a sinistra, dettagli a destra */
+  #product_Page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: start;
+    padding: 0.5em 1.5em 2.5em 1.5em;
+  }
+
+  #product_Page > h2{
+    grid-column: 1 / -1;
+  }
+
+  #product_Images,
+  #product_Details{
+    float: none;
+    width: auto;
+    height: auto;
+  }
+
+  #product_Images{
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+
+  #product_Images img{
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+  }
+
+  #product_Details h3{
+    margin-top: 0;
+  }
+
+  #product_Specs{
+    font-size: 115%;
+  }
+
+  #product_Specs li{
+    padding: 0.4em 0;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  #product_Details .form{
+    margin: 1.5em 0;
+  }
+
+  #cart_Specs{
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    font-size: 115%;
+    margin: 0 0 1em 0;
+  }
+
+  #quantity{
+    padding: 0.5em 0.75em;
+    border-radius: 6px;
+    border: 1px solid #000000;
+    font-size: 100%;
+  }
+
+  #product_Description{
+    font-size: 115%;
+  }
+
+  #product_Description h3,
+  #delivery_Details h3{
+    font-size: 150%;
+  }
+
+  #delivery_Details{
+    font-size: 110%;
+  }
+
+  #delivery_Details h3{
+    margin-top: 0.8em;
+  }
+
+  /* FAQ */
+  #faq_Page{
+    width: 100%;
+    max-width: 900px;
+    padding: 0 1.5em 2em 1.5em;
+  }
+
+  #faq_Page h2{
+    margin-bottom: 1em;
+  }
+
+  .type_Questions{
+    margin: 1.5em 0 0.75em 0;
+  }
+
+  #faq_Page ul{
+    list-style: none;
+  }
+
+  .question{
+    margin-bottom: 0.75em;
+    padding: 0.9em 1.1em;
+    background-color: #F7F7F7;
+    border-left: 4px solid #EB0000;
+    border-radius: 6px;
+  }
+
+  .question h3{
+    font-size: 120%;
+    margin-bottom: 0.3em;
+  }
+
+  #formDomanda{
+    margin-top: 2em;
+  }
+
+  /* FORM */
+  .form input[type="email"],
+  .form input[type="nome"],
+  .form input[type="password"],
+  .form input[type="text"],
+  .form input[type="code"],
+  .form input[type="number"]{
+    width: 90%;
+    padding: 0.9em;
+    margin: 0.5em 0 1em 0;
+    border-radius: 6px;
+    border: 1px solid #000000;
+  }
+
+  #form_Container{
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .form{
+    border-radius: 10px;
+    gap: 0.25em;
+  }
+
+  /* CARRELLO */
+  #cart_Page{
+    width: 100%;
+    padding: 1em 1.5em;
+  }
+
+  #headerCart{
+    padding: 1em 0;
+  }
+
+  #order_Details{
+    max-width: 640px;
+    gap: 1.5em;
+  }
+
+  #delivery_Address input{
+    padding: 0.6em;
+    border-radius: 6px;
+  }
+
+  #delivery_Payments select{
+    width: 100%;
+    margin: 0.5em 0 0 0;
+    padding: 0.6em;
+    border-radius: 6px;
+  }
+
+  #cart_Container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25em;
+    margin: 2em 0 0 0;
+  }
+
+  #cart_Container li{
+    margin: 0;
+    height: auto;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  #cart_Container img{
+    display: block;
+    aspect-ratio: 1 / 1;
+    background-color: #F5F5F5;
+  }
+
+  .product_Info{
+    padding: 0.75em;
+  }
+
+  .product_Info p{
+    margin: 0 0 0.3em 0;
+  }
+
+  .product_Info .button{
+    width: 100%;
+    margin: 0.5em 0 0 0;
+    font-size: 100%;
+  }
+
+  /* AREA ADMIN E DOMANDE */
+  .box_q_a,
+  #q_a_container .q_a_box{
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 1em;
+  }
+
+  #descrizione,
+  #alt,
+  #keywords,
+  #categoria,
+  #marca,
+  .form_rimuovi select{
+    width: 90%;
+    border-radius: 6px;
+  }
+
+  /* TABLET */
+  @media screen and (max-width: 1024px){
+    #categories_Container,
+    #products_Container,
+    #cart_Container{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    #categories_Container,
+    #products_Container,
+    #cart_Container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #product_Page{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* MOBILE */
+  @media screen and (max-width: 508px){
+    #categories_Container{
+      grid-template-columns: 1fr;
+      gap: 0.75em;
+    }
+    #categories_Container a{
+      padding: 0.5em 0;
+    }
+    #products_Container,
+    #cart_Container{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75em;
+    }
+    #products_Container a{
+      font-size: 95%;
+    }
+    #brand_Container{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75em;
+    }
+    #payments_Grid li{
+      width: 70px;
+      height: 44px;
+      padding: 5px;
+    }
+    #product_Page{
+      padding: 0.5em 1em 1.5em 1em;
+    }
+    #cart_Specs{
+      flex-wrap: wrap;
+    }
+    #faq_Page{
+      padding: 0 1em 2em 1em;
+    }
+    footer{
+      padding-bottom: 4em;
+    }
+  }
